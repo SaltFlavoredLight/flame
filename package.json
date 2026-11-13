@@ -1,0 +1,27 @@
+{
+  "name": "flamework",
+  "version": "0.0.7",
+  "description": "FlameworkUI - the new, lightweighted UI that let you code just with JS",
+  "keywords": [
+    "Framework",
+    "UI",
+    "UX",
+    "Design",
+    "Swift"
+  ],
+  "homepage": "https://github.com/SaltFlavoredLight/flame#readme",
+  "bugs": {
+    "url": "https://github.com/SaltFlavoredLight/flame/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaltFlavoredLight/flame.git"
+  },
+  "license": "MIT",
+  "author": "Rayzhi (Salt Flavored Light)",
+  "type": "modules",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run dev"
+  }
+}
