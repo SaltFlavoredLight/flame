@@ -61,7 +61,6 @@ but it do not re-render your componets.
 >
 > Hint: It is OK to use Vars, but I don't recommend.
 
-
 ## Events
 
 You can make a hooks on everything that just happend to you. here is how to.
@@ -96,18 +95,28 @@ those event will be registered.
 we We discussed before, `render()` is the final thing that does render and create the DOM.
 But, there does have a Catch....... remember there have high and base level?
 
-### High Level:
+### High Level
 
 just stack elements, like this:
 
 ```js
 render() {
-    return new Group(
-        new Text("Hello"), // a system level High Level element
-        new CustomizeGroup(), // a Customize Group here.
-        new FButton("Infomation Here", () => {
+    return Group(
+        Text("Hello"), // a system level High Level element
+        CustomizeGroup(), // a Customize Group here.
+        FButton("Infomation Here", () => {
             this.state.count += 1;
         }).margin(30)
     )
 }
 ```
+
+### Base Level
+
+that's little bit complicated - there have no `render()`. in fact, it using a 
+
+```js
+```
+
+
+### Then, how to create element?

@@ -79,7 +79,7 @@ const e = flameworkUI.createElement;
 const Color = flameworkUI.Color;
 
 // usage on Bottom
-new Text("infomation here").style(Style.color("#235265"));
+Text("infomation here").style(Style.color("#235265"));
 
 // Or this way also work
 e(Text, {style: Style.color("#235265")}, "Infomation here");
@@ -101,7 +101,7 @@ const FButton = flameworkUI.elements.high.Button;
 function IncreaseByOne() {}
 
 // it use up to 2 inputs at same time. 
-new FButton("Click Me", IncreaseByOne).style(Style.color("#235265"))
+FButton("Click Me", IncreaseByOne).style(Style.color("#235265"))
 
 // that's same as
 e(FButton, {style: Style.color("#235265")}, "Click Me", IncreaseByOne);
