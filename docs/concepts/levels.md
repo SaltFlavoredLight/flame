@@ -25,7 +25,7 @@ there have 4 levels of Levels:
 
 1. App
 2. Window/Scene
-3. High Level Elements/View
+3. Compose Level Elements/View
 4. Node Elements/View
 5. Construction
 
@@ -38,15 +38,15 @@ Out of your gasp, technically this is Optional, and you should not use it esp. w
 
 You can use this Level to manage the elements, they can insert either Hieh Level Element/View or Node Level Ones.
 
-### High Level Elements/View Level
+### Compose Level Elements/View Level
 
-You can create or use High Level Element/View, that element will depend on Low Level Element.
+You can create or use Compose Level Element/View, that element will depend on Low Level Element.
 When you design a custom Element, you just stack up the Node Element/View
 It works by just Embed Node Level Completely.
 
 ### Node Elements/View Level
 
-That is an element that High Leve Element will use, but they are the only one (in theroy) that allowed for acsess DOM.
+That is an element that Compose Leve Element will use, but they are the only one (in theroy) that allowed for acsess DOM.
 There will have custom Element/View to self-manage the life-cycle of the Element/View, Connect with DOM or native element, And Determine the function that this will be created.
 
 **Note:**
@@ -92,10 +92,10 @@ no matter what, they will produce exact same result - a base level elementTree.
 
 the `e()` in this function successfully showed that it's like react's [createElement](https://react.dev/reference/react/createElement).
 but the main reacton it use Text is becuase that sometimes, like the example below, use mutiple slots.
-(of couse that this is a high level button)
+(of couse that this is a Compose level button)
 
 ```js
-const FButton = flameworkUI.elements.high.Button;
+const FButton = flameworkUI.elements.Compose.Button;
 
 // I will tell you how to use that and update state later.
 function IncreaseByOne() {}
